@@ -17,11 +17,17 @@ A personal portfolio website built from scratch with a focus on **minimalism**, 
 ## 📁 Project Structure
 
 index.html - main page
+
 about.html - about page
+
 contacts.html - contact page
+
 projects.html - gallery project page
+
 styles.css - all visual page
+
 index.css - visual main page
+
 script.js - animation page transition
 
 
