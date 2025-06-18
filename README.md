@@ -4,7 +4,13 @@ A personal portfolio website built from scratch with a focus on **minimalism**, 
 
 ---
 
+## 🌐 Live Demo
+
+You can test the website here: [kxmiii.github.io/web-bio](https://kxmiii.github.io/web-bio/) 🚀
+
 ## 🧠 Features
+
+---
 
 - 🌓 Clean dark-themed interface
 - 📱 Responsive design
