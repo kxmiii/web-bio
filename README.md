@@ -1,58 +1,37 @@
-# 💼 Developer Business Card
+# Custom vizit card of the developer
 
-A personal portfolio website built from scratch with a focus on **minimalism**, **clean typography**, and **subtle animations**. Manually tested and served locally using Live Server (VSC).
-
----
-
-## 🧠 Features
-
-- 🌓 Clean dark-themed interface
-- 📱 Responsive design
-- 🌈 Gradient background with modern aesthetic
-- 🎬 Smooth page transition animations
-- 🔤 Inter font styled to match Apple UI
+A personal portfolio website created from scratch with an emphasis on ** minimalism** and ** pleasant animation**.
 
 ---
 
-## 📁 Project Structure
+## Familiarization
 
-index.html - main page
+You can test the website here: [kxmiii.github.io/web-bio ](https://kxmiii.github.io/web-bio/)
 
-about.html - about page
+---
+
+## Project Structure
+
+index.html - home page
+
+about.html - a page for telling about yourself
 
 contacts.html - contact page
 
-projects.html - gallery project page
+projects.html - a page for showing your projects
 
-styles.css - all visual page
+styles.css - the entire visual file
 
-index.css - visual main page
+main.js is the main file for scripts.
 
-script.js - animation page transition
+nav.js - scripts for the navigation menu
+
+pageLoader.js scripts for a pleasant visualization of page loading
+
 
 
 ---
 
-## 🛠️ Built With
+## First-time Project
 
-HTML5
-
-CSS3
-
-JavaScript (Vanilla)
-
-VS Code + Live Server
-
----
-
-## ✨ First-time Project
-
-This was my first experience building a website — from a blank page to a functional project. A simple idea, a bit of HTML and CSS, lots of trial and error — and this minimalist portfolio came to life, crafted with care and genuine curiosity in web development.
-
-## 🤖 Created with AI Collaboration
-
-Hand-coded with ❤️ by me — and thoughtfully enhanced with help from AI.
-
-
-
-
+This was my first experience creating a website from a blank page to a universal website. A simple idea, a little work, and this beautiful minimalistic portfolio turned out to be recreated, created with little experience, but quite an interest in web development.

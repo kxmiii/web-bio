@@ -1,21 +1,36 @@
+:root {
+    --page-transition-duration: 0.35s;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
 	line-height: 1.6;
 	letter-spacing: 0.1px;
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
-	min-height: 100vh;
+	min-height: 100dvh; 
 	background: linear-gradient(0deg, #121212, #1f1f1f);
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	color: #f5f5f5;
 	font-family: 'Inter', sans-serif;
-	padding: 40px;
+	padding: 40px; 
 	opacity: 0;
-	transition: opacity 0.5s ease-in;
+	transform: translateY(8px);
+	transition: opacity var(--page-transition-duration) ease-in, transform var(--page-transition-duration) ease-in;
+	will-change: opacity, transform;
 }
 
 body.loaded {
 	opacity: 1;
+	transform: none;
+}
+
+body.transitioning {
+	pointer-events: none;
+	user-select: none;
 }
 
 .navbar {
@@ -26,6 +41,7 @@ body.loaded {
 	position: sticky;
 	top: 0;
 	z-index: 1000;
+	user-select: none;
 }
 
 .navbar a {
@@ -82,4 +98,30 @@ button {
 
 button:hover {
 	background-color: #2a2a2a;
+}
+
+#content {
+    transition: opacity var(--page-transition-duration) ease, transform var(--page-transition-duration) ease;
+    will-change: opacity, transform;
+}
+
+#content.fade-in {
+    opacity: 1;
+    transform: none;
+}
+
+#content.fade-out {
+    opacity: 0;
+    transform: translateY(8px);
+    pointer-events: none;
+}
+
+.main {
+    padding: 80px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
 }
