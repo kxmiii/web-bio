@@ -3,8 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="canonical" href="https://kxmiii.github.io/web-bio/contacts.html" />
+        <meta name="color-scheme" content="dark" />
+        <meta name="theme-color" content="#000000" />
+
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/styles.css" />
+        <noscript>
+            <style>
+                body {
+                    opacity: 1;
+                    transform: none;
+                }
+            </style>
+        </noscript>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -24,20 +36,27 @@
         </header>
 
         <main id="content" class="socials">
-            <h1>Contact information:</h1>
-            <ul>
-                <li>Email: random@gmail.com</li>
-                <li>Phone: +7 (999) 999-99-99</li>
-                <li>
-                    Telegram:
-                    <a href="https://t.me" target="_blank">username</a>
+            <h1>Contact information</h1>
+            <ul class="contact-list">
+                <li class="contact-row">
+                    <span class="contact-label">Email</span>
+                    <a class="contact-value" href="mailto:random@gmail.com">random@gmail.com</a>
                 </li>
-                <li>
-                    GitHub: <a href="https://github.com/kxmiii" target="_blank">kxmiii</a>
+                <li class="contact-row">
+                    <span class="contact-label">Phone</span>
+                    <a class="contact-value" href="tel:+79999999999">+7 (999) 999-99-99</a>
+                </li>
+                <li class="contact-row">
+                    <span class="contact-label">Telegram</span>
+                    <a class="contact-value" href="https://t.me" target="_blank" rel="noopener">username</a>
+                </li>
+                <li class="contact-row">
+                    <span class="contact-label">GitHub</span>
+                    <a class="contact-value" href="https://github.com/kxmiii" target="_blank" rel="noopener">kxmiii</a>
                 </li>
             </ul>
         </main>
 
-        <script type="module" src="js/main.js" defer></script>
+        <script type="module" src="js/main.js"></script>
     </body>
 </html>

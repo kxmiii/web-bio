@@ -1,26 +1,63 @@
-# 🌐 Custom vizit card of the developer
+# Portfolio
 
-## 🧐 The First Project
+A small personal portfolio built with plain HTML, CSS, and JavaScript. No frameworks, no build step, no dependencies.
 
-This was my first experience in creating a website that consists of basic tools (HTML5, CSS3, JS). It's a simple idea, and the website contains a template for a biography, which is quite presentable and minimalistic. It was created to gain practical skills in web and github.
+**Live:** [kxmiii.github.io/web-bio](https://kxmiii.github.io/web-bio/)
 
----
+## What's inside
 
-## 🔬 Familiarization
+- Four pages: home, about, projects, and contacts.
+- Smooth page transitions without full reloads. Pages are preloaded on hover, and the scroll position is remembered when you go back.
+- Responsive project grid: four columns on desktop, two on tablets, one on phones.
+- Dark theme with a soft gradient and a muted red accent.
+- Working contact links: email, phone, Telegram, and GitHub.
+- Respects reduced motion and stays readable without JavaScript.
 
-You can test the website here: [kxmiii.github.io/web-bio ](https://kxmiii.github.io/web-bio/)
+## Structure
 
----
+```text
+.
+├── assets/
+│   └── favicon.ico
+├── css/
+│   └── styles.css        # all styles and responsive rules
+├── js/
+│   ├── main.js           # navigation, prefetch, history, scroll
+│   ├── nav.js            # active menu link and link handling
+│   └── pageLoader.js     # loading and caching pages
+├── about.html
+├── contacts.html
+├── index.html
+├── projects.html
+└── README.md
+```
 
-## 🛠️ Project Structure
+## Run locally
 
-| File | Description |
-|------|-------------|
-| index.html | home page |
-| about.html | a page for telling about yourself |
-| contacts.html | contact page |
-| projects.html | a page for showing your projects |
-| styles.css | the entire visual file |
-| main.js | the main file for scripts |
-| nav.js | scripts for the navigation menu |
-| pageLoader.js | scripts for a pleasant visualization of page loading |
+The site is static, but it needs to be served over HTTP — opening `index.html` directly from disk will not load the scripts.
+
+```bash
+# Python
+python -m http.server 8000
+
+# or Node
+npx serve .
+```
+
+Then open <http://localhost:8000/>.
+
+## Make it yours
+
+1. Replace the placeholder text on the home and About pages.
+2. Update the contact details in `contacts.html` and keep the link format (`mailto:`, `tel:`, Telegram, GitHub).
+3. Add your projects to `projects.html` — each card has a number, a title, a short description, and a few tags.
+4. If you add a new page, give it a `#content` block and a link in the navbar.
+5. If the site moves to another domain, update the canonical URLs in the four HTML files.
+
+## Deployment
+
+The site is hosted on **GitHub Pages** straight from the `main` branch. There is no build step: push the files and they go live.
+
+## About the project
+
+This was my first experience creating a website from a blank page to a universal website. A simple idea, a little work, and this beautiful minimalistic portfolio turned out to be recreated, created with little experience, but quite an interest in web development.
