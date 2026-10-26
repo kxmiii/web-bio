@@ -4,6 +4,13 @@ A small personal portfolio built with plain HTML, CSS, and JavaScript. No framew
 
 **Live:** [kxmiii.github.io/web-bio](https://kxmiii.github.io/web-bio/)
 
+## Screenshots
+
+| Home | Projects |
+| --- | --- |
+| ![Home page](screenshots/home.png) | ![Projects page](screenshots/projects.png) |
+| ![About page](screenshots/about.png) | ![Contact page](screenshots/contact.png) |
+
 ## What's inside
 
 - Four pages: home, about, projects, and contacts.
